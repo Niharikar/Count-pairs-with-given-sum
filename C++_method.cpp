@@ -5,6 +5,8 @@ using namespace std;
 int get_pair_count(int a[], int n, int sum)
 {
   unordered_map <int,int> m;
+  for(int i = 0;i<n;i++)
+    m[a[i]]++;
  
   int count = 0;
   
@@ -17,7 +19,7 @@ int get_pair_count(int a[], int n, int sum)
       
   }
   
-  return count;
+  return (count/2);
   
 }
 
